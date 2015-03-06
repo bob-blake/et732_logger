@@ -28,7 +28,7 @@
 									//also needed by StackTsk.h, so don't change the name
 
 #include "TCPIP Stack/TCPIP.h" //include TCPIP headers
-//#include "MDD File System/FSIO.h" //include FAT file system
+#include "MDD File System/FSIO.h" //include FAT file system
 
 APP_CONFIG AppConfig;
 static void InitHardware(void);
