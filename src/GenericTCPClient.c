@@ -61,19 +61,14 @@
 #include "TCPIP Stack/TCPIP.h"
 
 // Defines the server to be accessed for this application
-//static BYTE ServerName[] =	"api.cosm.com";
 static BYTE ServerName[] =	"bobblake.me";
 
 // Defines the port to be accessed for this application
 static WORD ServerPort = 80;
 
 // Defines the URL to be requested by this HTTP client
-//static ROM BYTE RemoteURL[] = "/v2/feeds/95329.csv";
-//static ROM BYTE RemoteURL[] = "/bbq/index.php";
 static ROM BYTE RemoteURL[] = "/bbq/php/datalog.php";
 
-// Defines the API key for the Cosm page
-static ROM BYTE APIKey[] = "nSH_t8R7aIe1_pOUKKLXOAOg38SSAKxEYmFiY0VHbURERT0g";
 
 static int tcp_ready_to_send = 0;
 
@@ -199,41 +194,20 @@ void GenericTCPClient(char* temp1, char* temp2, unsigned long timestamp)
 			// Modified as per: http://www.microchip.com/forums/m652096-print.aspx
 			// Place the application protocol data into the transmit buffer.  
 			// Send an HTTP PUT request.
-			/*TCPPutROMString(MySocket, (ROM BYTE*)"PUT ");
-			TCPPutROMString(MySocket, RemoteURL);
-			TCPPutROMString(MySocket, (ROM BYTE*)" HTTP/1.1\r\nHost: ");
-			TCPPutROMString(MySocket, ServerName);
-			TCPPutROMString(MySocket, (ROM BYTE*)"\r\nX-ApiKey: ");
-			TCPPutROMString(MySocket, APIKey);
-			TCPPutROMString(MySocket, (ROM BYTE*)"\r\n");
-			TCPPutROMString(MySocket, (ROM BYTE*)"Content-Type: text/csv\nContent-Length: ");
-			TCPPutString(MySocket, datalen_s);
-			TCPPutROMString(MySocket, (ROM BYTE*)"\r\n");
-			TCPPutROMString(MySocket, (ROM BYTE*)"Connection: close\r\n\r\n");
-			TCPPutROMString(MySocket, (ROM BYTE*)"food,");
-			TCPPutString(MySocket, temp1);
-			TCPPutROMString(MySocket, (ROM BYTE*)"\r\n");
-			TCPPutROMString(MySocket, (ROM BYTE*)"bbq,");
-			TCPPutString(MySocket, temp2);*/
 
 			TCPPutROMString(MySocket, (ROM BYTE*)"PUT ");
 			TCPPutROMString(MySocket, RemoteURL);
 			TCPPutROMString(MySocket, (ROM BYTE*)" HTTP/1.1\r\nHost: ");
 			TCPPutROMString(MySocket, ServerName);
-			//TCPPutROMString(MySocket, (ROM BYTE*)"\r\nX-ApiKey: ");
-			//TCPPutROMString(MySocket, APIKey);
 			TCPPutROMString(MySocket, (ROM BYTE*)"\r\n");
 			TCPPutROMString(MySocket, (ROM BYTE*)"Content-Type: text/csv\nContent-Length: ");
 			TCPPutString(MySocket, datalen_s);
 			TCPPutROMString(MySocket, (ROM BYTE*)"\r\n");
 			TCPPutROMString(MySocket, (ROM BYTE*)"Connection: close\r\n\r\n");
-		//	TCPPutROMString(MySocket, (ROM BYTE*)"food,");
 			TCPPutString(MySocket, temp1);
 			TCPPutROMString(MySocket, (ROM BYTE*)",");
-		//	TCPPutROMString(MySocket, (ROM BYTE*)"bbq,");
 			TCPPutString(MySocket, temp2);
 			TCPPutROMString(MySocket, (ROM BYTE*)",");
-		//	TCPPutROMString(MySocket, (ROM BYTE*)"time,");
 			TCPPutString(MySocket, time);
 			TCPPutROMString(MySocket, (ROM BYTE*)"\r\n");
 

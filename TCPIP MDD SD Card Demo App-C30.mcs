@@ -665,19 +665,6 @@ ToolArgsString=-g -Wall -mlarge-code
 TraceCmdString=
 DebugOptions=
 [File051]
-Location=C:\git\et732_logger\objects\FSIO.o
-Folder=Intermediary
-DeviceName=dsPIC33FJ128GP204
-LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
-LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
-LanguageToolLocation=C:\Program Files (x86)\Microchip\mplabc30\v3.30c\bin\pic30-gcc.exe
-PPAD=$(BINDIR)|C:\git\et732_logger\output||$(TMPDIR)|C:\git\et732_logger\objects||$(AINDIR)||$(INCDIR)|C:\git\et732_logger\src;.;..\Microchip\Include;%PROGRAMFILES%\Microchip\MPLAB C30\include;C:\Microchip Solutions v2011-06-02\Microchip\Include\TCPIP Stack;C:\Microchip Solutions v2011-06-02\TCPIP\Include\Demo App MDD;C:\Microchip Solutions v2011-06-02\Microchip\Include||$(LIBDIR)|C:\Microchip Solutions v2011-06-02\TCPIP\Demo App MDD;C:\Microchip Solutions v2011-06-02\Microchip\TCPIP Stack||$(LKRDIR)||
-SOLK=<src>|MainDemo.c|CustomHTTPApp.c|C:\Microchip Solutions v2011-06-02\Microchip\TCPIP Stack\Tick.c|C:\Microchip Solutions v2011-06-02\Microchip\TCPIP Stack\UART2TCPBridge.c|C:\Microchip Solutions v2011-06-02\Microchip\TCPIP Stack\UART.c|C:\Microchip Solutions v2011-06-02\Microchip\TCPIP Stack\UDP.c|C:\Microchip Solutions v2011-06-02\Microchip\TCPIP Stack\UDPPerformanceTest.c|C:\Microchip Solutions v2011-06-02\Microchip\TCPIP Stack\Announce.c|C:\Microchip Solutions v2011-06-02\Microchip\TCPIP Stack\ARP.c|C:\Microchip Solutions v2011-06-02\Microchip\TCPIP Stack\Delay.c|C:\Microchip Solutions v2011-06-02\Microchip\TCPIP Stack\DHCP.c|C:\Microchip Solutions v2011-06-02\Microchip\TCPIP Stack\DHCPs.c|C:\Microchip Solutions v2011-06-02\Microchip\TCPIP Stack\DNS.c|C:\Microchip Solutions v2011-06-02\Microchip\TCPIP Stack\DynDNS.c|C:\Microchip Solutions v2011-06-02\Microchip\TCPIP Stack\FTP.c|C:\Microchip Solutions v2011-06-02\Microchip\TCPIP Stack\Hashes.c|C:\Microchip Solutions v2011-06-02\Microchip\TCPIP Stack\Helpers.c|C:\Microchip Solutions v2011-06-02\Microchip\TCPIP Stack\ICMP.c|C:\Microchip Solutions v2011-06-02\Microchip\TCPIP Stack\IP.c|C:\Microchip Solutions v2011-06-02\Microchip\TCPIP Stack\LCDBlocking.c|C:\Microchip Solutions v2011-06-02\Microchip\TCPIP Stack\MPFS2.c|C:\Microchip Solutions v2011-06-02\Microchip\TCPIP Stack\NBNS.c|C:\Microchip Solutions v2011-06-02\Microchip\TCPIP Stack\Reboot.c|C:\Microchip Solutions v2011-06-02\Microchip\TCPIP Stack\SMTP.c|C:\Microchip Solutions v2011-06-02\Microchip\TCPIP Stack\SNTP.c|C:\Microchip Solutions v2011-06-02\Microchip\TCPIP Stack\SPIFlash.c|C:\Microchip Solutions v2011-06-02\Microchip\TCPIP Stack\SPIRAM.c|C:\Microchip Solutions v2011-06-02\Microchip\TCPIP Stack\StackTsk.c|C:\Microchip Solutions v2011-06-02\Microchip\TCPIP Stack\TCP.c|C:\Microchip Solutions v2011-06-02\Microchip\TCPIP Stack\TCPPerformanceTest.c|C:\Microchip Solutions v2011-06-02\Microchip\TCPIP Stack\Telnet.c|C:\Microchip Solutions v2011-06-02\Microchip\TCPIP Stack\TFTPc.c|UARTConfig.c|GenericTCPClient.c|GenericTCPServer.c|PingDemo.c|SMTPDemo.c|C:\Microchip Solutions v2011-06-02\Microchip\TCPIP Stack\BerkeleyAPI.c|BerkeleyUDPClientDemo.c|BerkeleyTCPClientDemo.c|BerkeleyTCPServerDemo.c|C:\Microchip Solutions v2011-06-02\Microchip\TCPIP Stack\ENC28J60.c|CustomSSLCert.c|C:\Microchip Solutions v2011-06-02\Microchip\TCPIP Stack\SSL.c|C:\Microchip Solutions v2011-06-02\Microchip\TCPIP Stack\ARCFOUR.c|C:\Microchip Solutions v2011-06-02\Microchip\TCPIP Stack\BigInt.c|C:\Microchip Solutions v2011-06-02\Microchip\TCPIP Stack\Random.c|C:\Microchip Solutions v2011-06-02\Microchip\TCPIP Stack\RSA.c|C:\Microchip Solutions v2011-06-02\Microchip\TCPIP Stack\AutoIP.c|C:\Microchip Solutions v2011-06-02\Microchip\TCPIP Stack\FileSystem.c|C:\Microchip Solutions v2011-06-02\Microchip\MDD File System\SD-SPI.c|C:\Microchip Solutions v2011-06-02\Microchip\MDD File System\FSIO.c|HTTP2_MDD.c||<obj>||<lib>|C:\Microchip Solutions v2011-06-02\Microchip\TCPIP Stack\BigInt_helper_coff.a|C:\Microchip Solutions v2011-06-02\Microchip\TCPIP Stack\BigInt_helper_elf.a||<lkr>||
-SuiteArgsString=
-ToolArgsString=-g -Wall -mlarge-code
-TraceCmdString=
-DebugOptions=
-[File052]
 Location=C:\git\et732_logger\objects\HTTP2_MDD.o
 Folder=Intermediary
 DeviceName=dsPIC33FJ128GP204
@@ -690,7 +677,7 @@ SuiteArgsString=
 ToolArgsString=-g -Wall -mlarge-code
 TraceCmdString=
 DebugOptions=
-[File053]
+[File052]
 Location=C:\git\et732_logger\output\TCPIP MDD SD Card Demo App-C30.cof
 Folder=Output
 DeviceName=dsPIC33FJ128GP204
@@ -703,7 +690,7 @@ SuiteArgsString=
 ToolArgsString=--heap=512 -Map="$(BINDIR_)$(TARGETBASE).map" --report-mem -o"$(BINDIR_)$(TARGETBASE).$(TARGETSUFFIX)"
 TraceCmdString=
 DebugOptions=
-[File054]
+[File053]
 Location=C:\git\et732_logger\output\TCPIP MDD SD Card Demo App-C30.hex
 Folder=Output
 DeviceName=dsPIC33FJ128GP204
